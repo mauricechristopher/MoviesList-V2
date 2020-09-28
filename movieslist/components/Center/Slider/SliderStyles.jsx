@@ -2,12 +2,13 @@ import styled from 'styled-components'
 import { Carousel } from 'react-responsive-carousel'
 
 export const Wrapper = styled.div`
-	width: 100vw;
 	height: 30vh;
-	/* border-style: solid; */
+	width: 100vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background: white;
+	/* border-style: solid; */
 	/* padding: 7px 25px; */
 `
 

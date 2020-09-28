@@ -1,0 +1,19 @@
+{
+  "name": "movieslist",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "9.5.3",
+    "re-carousel": "^2.4.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-responsive-carousel": "^3.2.10",
+    "styled-components": "^5.2.0",
+    "styled-icons": "^10.21.0"
+  }
+}

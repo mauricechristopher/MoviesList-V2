@@ -25,25 +25,34 @@ export const CategoryItem = styled.h1`
 	font-size: 14px;
 	line-height: 14px;
 	letter-spacing: 2px;
-	color: #ff4f4f;
+	color: ${({ isActive }) => (isActive ? '#ff4f4f' : 'lightgray')};
 `
 
 export const ListDiv = styled.div`
-	height: 100%;
+	height: 90%;
 	width: 100vw;
 	/* background: black; */
-	overflow-y: auto;
 	display: flex;
-	flex-wrap: wrap;
-	/* justify-content: center; */
-	/* align-content: flex-start; */
-	padding: 12px;
+	justify-content: center;
 `
 
+export const MovieListWrapper = styled.div`
+	overflow-y: scroll;
+	height: 100%;
+	width: 90vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 16px;
+
+	/* gap: 1em; */
+`
 export const MovieCard = styled.div`
-	height: 32vh;
-	width: 26vh;
-	margin: 6px;
+	height: 220px;
+	width: 177px;
 	background: gray;
-	border-radius: 7px;
+	border-radius: 5px;
+	margin-top: 2vw;
+	z-index: 2;
+	box-shadow: 0 4px 8px 0 #dcdcdc;
 `

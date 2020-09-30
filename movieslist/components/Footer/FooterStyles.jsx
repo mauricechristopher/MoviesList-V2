@@ -14,6 +14,7 @@ export const Wrapper = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 7vh;
+	box-shadow: 0 -10px 10px lightgray;
 `
 
 export const LeftIcon = styled(Search)`

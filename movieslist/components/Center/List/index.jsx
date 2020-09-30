@@ -1,28 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
 	Wrapper,
 	CategoryDiv,
 	CategoryItem,
 	ListDiv,
 	MovieCard,
+	MovieListWrapper,
 } from './ListStyles'
 
-const List = () => (
-	<Wrapper>
-		<CategoryDiv>
-			<CategoryItem>NOW SHOWING</CategoryItem>
-			<CategoryItem>COMING SOON</CategoryItem>
-		</CategoryDiv>
-		<ListDiv>
-			<MovieCard />
-			<MovieCard />
-			<MovieCard />
-			<MovieCard />
-			<MovieCard />
-			<MovieCard />
-			<MovieCard />
-		</ListDiv>
-	</Wrapper>
-)
+const List = () => {
+	const [isActive, setIsActive] = useState('True')
+	return (
+		<Wrapper>
+			<CategoryDiv>
+				<CategoryItem>NOW SHOWING</CategoryItem>
+				<CategoryItem isActive>COMING SOON</CategoryItem>
+			</CategoryDiv>
+			<ListDiv>
+				<MovieListWrapper>
+					<MovieCard />
+					<MovieCard />
+					<MovieCard />
+					<MovieCard />
+					<MovieCard />
+					<MovieCard />
+					<MovieCard />
+				</MovieListWrapper>
+			</ListDiv>
+		</Wrapper>
+	)
+}
 
 export default List

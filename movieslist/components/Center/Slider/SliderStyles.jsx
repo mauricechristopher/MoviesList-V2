@@ -16,14 +16,17 @@ export const StyledCarousel = styled(Carousel)`
 	height: 28vh !important;
 	width: 90vw;
 	border-radius: 5px;
-	background: black;
+	/* background: black; */
 	overflow: hidden;
+	&& dot selected {
+		display: none !important;
+	}
 `
 
 export const CarouselItem = styled.div`
 	height: 28vh;
 	width: 100%;
-	background: black;
+	/* background: black; */
 	overflow: hidden;
 `
 

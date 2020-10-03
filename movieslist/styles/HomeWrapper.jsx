@@ -7,7 +7,7 @@ const HomeWrapper = styled.main`
 	display: flex;
 	flex-direction: column;
 	z-index: 0;
-	background-image: url('https://i.gyazo.com/8b110d3afab51bba971bba6e8604e89e.png');
+	/* background-image: url('https://i.gyazo.com/8b110d3afab51bba971bba6e8604e89e.png'); */
 	background-repeat: no-repeat;
 	background-size: contain;
 `

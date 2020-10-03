@@ -22,8 +22,8 @@ export const CategoryDiv = styled.div`
 `
 
 export const CategoryItem = styled.h1`
-	font-size: 14px;
-	line-height: 14px;
+	font-size: 12px;
+	line-height: 12px;
 	letter-spacing: 2px;
 	color: ${({ isActive }) => (isActive ? '#ff4f4f' : 'lightgray')};
 `
@@ -44,15 +44,8 @@ export const MovieListWrapper = styled.div`
 	flex-wrap: wrap;
 	justify-content: space-between;
 	padding-bottom: 16px;
-
+	::-webkit-scrollbar {
+		display: none;
+	}
 	/* gap: 1em; */
-`
-export const MovieCard = styled.div`
-	height: 220px;
-	width: 177px;
-	background: gray;
-	border-radius: 5px;
-	margin-top: 2vw;
-	z-index: 2;
-	box-shadow: 0 4px 8px 0 #dcdcdc;
 `

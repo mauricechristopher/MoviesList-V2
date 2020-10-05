@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import { Heart } from '@styled-icons/feather/Heart'
+import { Imdb } from '@styled-icons/simple-icons/Imdb'
+import { Thumbsup } from '@styled-icons/octicons/Thumbsup'
 
 export const Wrapper = styled.div`
 	height: 198px;
@@ -26,15 +28,52 @@ export const LikeButton = styled(Heart)`
 
 export const CardFooter = styled.div`
 	height: 17%;
-	width: 100%;
+	width: 160px;
+	overflow: hidden;
 	background: white;
 	border-radius: 0 0 5px 5px;
 	z-index: 4;
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	align-items: middle;
+	justify-content: space-around;
 `
 
-export const RatingDiv = styled.div``
+export const RatingDiv = styled.div`
+	height: 100%;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+`
 
-export const LikesDiv = styled.div``
+export const RatingIcon = styled(Imdb)`
+	height: 50%;
+	width: auto;
+	color: gray;
+`
+
+export const RatingText = styled.h2`
+	font-size: 12px;
+	margin: 0;
+	margin-left: 5px;
+`
+
+export const VotesDiv = styled.div`
+	height: 100%;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+`
+
+export const VotesIcon = styled(Thumbsup)`
+	height: 50%;
+	width: auto;
+	color: gray;
+`
+
+export const VotesText = styled.h2`
+	font-size: 12px;
+	margin: 0;
+	margin-left: 5px;
+`
